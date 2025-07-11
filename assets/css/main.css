@@ -869,6 +869,21 @@ section,
   background-color: var(--accent-color);
 }
 
+.skill-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-list li {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.skill-list i {
+  margin-right: 10px;
+  color: #18d26e;
+}
+
 /*--------------------------------------------------------------
 # Interests Section
 --------------------------------------------------------------*/
