@@ -1213,6 +1213,90 @@ section,
   color: var(--accent-color);
 }
 
+/* CTA Section Styling */
+.service-details .cta-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-details .cta-section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.service-details .cta-section h4 {
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-details .cta-section p {
+  color: #f8f9fa;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.service-details .cta-section .btn-primary {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.service-details .cta-section .btn-primary:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Alternative styling jika ingin tema yang lebih gelap */
+.service-details .cta-section.dark-theme {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+}
+
+.service-details .cta-section.dark-theme h4 {
+  color: #ecf0f1;
+}
+
+.service-details .cta-section.dark-theme p {
+  color: #bdc3c7;
+}
+
+/* Alternative styling jika ingin tema yang lebih terang dengan kontras baik */
+.service-details .cta-section.light-theme {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border: 1px solid #dee2e6;
+}
+
+.service-details .cta-section.light-theme h4 {
+  color: #2c3e50;
+}
+
+.service-details .cta-section.light-theme p {
+  color: #495057;
+}
+
+.service-details .cta-section.light-theme .btn-primary {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  color: #ffffff;
+}
+
+.service-details .cta-section.light-theme .btn-primary:hover {
+  background: color-mix(in srgb, var(--accent-color), black 10%);
+  border-color: color-mix(in srgb, var(--accent-color), black 10%);
+}
+
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
@@ -1385,6 +1469,53 @@ section,
 .portfolio-details .portfolio-description p {
   padding: 0;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.project-selector {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.project-selector button {
+  margin: 0 10px;
+  padding: 12px 24px;
+  border: 2px solid var(--accent-color);
+  background: var(--surface-color);
+  color: var(--accent-color);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.project-selector button.active {
+  background: var(--accent-color);
+  color: var(--surface-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+    
+.project-selector button:hover {
+  background: var(--accent-color);
+  color: var(--surface-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-selector button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+    
+.project-content {
+  display: none;
+}
+    
+.project-content.active {
+  display: block;
 }
 
 /*--------------------------------------------------------------
